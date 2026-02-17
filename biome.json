@@ -19,7 +19,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "includes": ["**"]
+    "includes": ["**", "!**/dist"]
   },
   "formatter": {
     "indentStyle": "space",
@@ -31,8 +31,7 @@
     "enabled": true,
     "rules": {
       "recommended": false
-    },
-    "includes": ["**", "!**/dist"]
+    }
   },
   "javascript": {
     "formatter": {
