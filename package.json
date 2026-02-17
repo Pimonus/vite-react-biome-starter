@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
     "build": "tsc -b && vite build",
+    "check": "biome check --formatter-enabled=false --linter-enabled=false",
+    "check:fix": "biome check --formatter-enabled=false --linter-enabled=false --write",
     "compile": "tsc -noEmit",
     "dev": "vite",
     "format": "biome format",
     "format:fix": "biome format --write",
-    "format:imports": "biome check --formatter-enabled=false --linter-enabled=false --organize-imports-enabled=true",
-    "format:imports:fix": "biome check --formatter-enabled=false --linter-enabled=false --organize-imports-enabled=true --write",
     "lint": "biome lint",
     "lint:fix": "biome lint --write",
     "preview": "vite preview"
